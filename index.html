@@ -1,0 +1,168 @@
+<!-- Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MINT Coaching - Werteanalyse</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="dnd.js"></script>
+  </head>  
+	<img src="Logo.png" alt="Mint Coaching"> 
+ <h1>
+  Werteanalyse
+  </h1>
+  <body>
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <colgroup>
+    <col width="20%">
+    <col width="20%">
+	<col width="20%">
+	<col width="20%">
+	<col width="20%">
+  </colgroup>
+  <tr>
+  <td>
+	
+    <div class="container">
+        <div draggable="true" class="box" id="1">1</div>
+        <div draggable="true" class="box" id="2">2</div>
+        <div draggable="true" class="box" id="3">3</div>
+		<div draggable="true" class="box" id="4">4</div>
+		<div draggable="true" class="box" id="5">5</div>
+		<div draggable="true" class="box" id="6">6</div>
+		<div draggable="true" class="box" id="7">7</div>
+		<div draggable="true" class="box" id="8">8</div>
+		<div draggable="true" class="box" id="9">9</div>
+		<div draggable="true" class="box" id="10">10</div>
+		
+		<button class="button" onclick="checkbox()">Click me</button>
+  </td>
+  <td>
+  
+			<div>
+			<input type="checkbox" name="werte" value="Abenteuer" id="abenteuer"> <label class="lab" for="Abenteuer">Abenteuer</label><br>
+			<input type="checkbox" name="werte" value="Abwechslung" id="abwechslung"> <label for="Abwechslung">Abwechslung</label><br>
+			<input type="checkbox" name="werte" value="Aktivität" id="aktivität"> <label for="Aktivität">Aktivität</label><br>
+			<input type="checkbox" name="werte" value="Altersversorgung" id="altersversorgung"> <label for="Altersversorgung">Altersversorgung</label><br>
+			<input type="checkbox" name="werte" value="Ausgeglichenheit" id="ausgeglichenheit"> <label for="Ausgeglichenheit">Ausgeglichenheit</label><br>
+			<input type="checkbox" name="werte" value="Ausgleich" id="ausgleich"> <label for="Ausgleich">Ausgleich</label><br>
+			<input type="checkbox" name="werte" value="Ausstrahlung" id="ausstrahlung"> <label for="Ausstrahlung">Ausstrahlung</label><br>
+			<input type="checkbox" name="werte" value="Autorität" id="autorität"> <label for="Autorität">Autorität</label><br>
+			<input type="checkbox" name="werte" value="Begeisterung" id="begeisterung"> <label for="Begeisterung">Begeisterung</label><br>
+			<input type="checkbox" name="werte" value="Besitz" id="besitz"> <label for="Besitz">Besitz</label><br>
+			<input type="checkbox" name="werte" value="Bildung" id="bildung"> <label for="Bildung">Bildung</label><br>
+			<input type="checkbox" name="werte" value="Dankbarkeit" id="dankbarkeit"> <label for="Dankbarkeit">Dankbarkeit</label><br>
+			<input type="checkbox" name="werte" value="Denken" id="denken"> <label for="Denken">Denken</label><br>
+			<input type="checkbox" name="werte" value="Disziplin" id="disziplin"> <label for="Disziplin">Disziplin</label><br>
+			<input type="checkbox" name="werte" value="Ehrlichkeit" id="ehrlichkeit"> <label for="Ehrlichkeit">Ehrlichkeit</label><br>
+			<input type="checkbox" name="werte" value="Einfluss" id="einfluss"> <label for="Einfluss">Einfluss</label><br>
+			<input type="checkbox" name="werte" value="Energie" id="energie"> <label for="Energie">Energie</label><br>
+			<input type="checkbox" name="werte" value="Entwicklung" id="entwicklung"> <label for="Entwicklung">Entwicklung</label><br>
+			<input type="checkbox" name="werte" value="Erholung" id="erholung"> <label for="Erholung">Erholung</label><br>
+			<input type="checkbox" name="werte" value="Ernährung" id="ernährung"> <label for="Ernährung">Ernährung</label><br>
+			<input type="checkbox" name="werte" value="Ethik" id="ethik"> <label for="Ethik">Ethik</label><br>
+			<input type="checkbox" name="werte" value="Familiensinn" id="familiensinn"> <label for="Familiensinn">Familiensinn</label><br>
+			<input type="checkbox" name="werte" value="Finanz. Gewinn" id="finanz. gewinn"> <label for="Finanz. Gewinn">Finanz. Gewinn</label><br>
+			<input type="checkbox" name="werte" value="Fitness" id="fitness"> <label for="Fitness">Fitness</label><br>
+			<input type="checkbox" name="werte" value="Fleiß" id="fleiß"> <label for="Fleiß">Fleiß</label><br>
+			</div>
+			</td>
+			<td>
+			<div>
+			<input type="checkbox" name="werte" value="Freizeit" id="freizeit"> <label for="Freizeit">Freizeit</label><br>
+			<input type="checkbox" name="werte" value="Freundlichkeit" id="freundlichkeit"> <label for="Freundlichkeit">Freundlichkeit</label><br>
+			<input type="checkbox" name="werte" value="Freundschaft" id="freundschaft"> <label for="Freundschaft">Freundschaft</label><br>
+			<input type="checkbox" name="werte" value="Frieden" id="frieden"> <label for="Frieden">Frieden</label><br>
+			<input type="checkbox" name="werte" value="Führung" id="führung"> <label for="Führung">Führung</label><br>
+			<input type="checkbox" name="werte" value="Fürsorge" id="fürsorge"> <label for="Fürsorge">Fürsorge</label><br>
+			<input type="checkbox" name="werte" value="Geborgenheit" id="geborgenheit"> <label for="Geborgenheit">Geborgenheit</label><br>
+			<input type="checkbox" name="werte" value="Geist" id="geist"> <label for="Geist">Geist</label><br>
+			<input type="checkbox" name="werte" value="Gelassenheit" id="gelassenheit"> <label for="Gelassenheit">Gelassenheit</label><br>
+			<input type="checkbox" name="werte" value="Geld" id="geld"> <label for="Geld">Geld</label><br>
+			<input type="checkbox" name="werte" value="Gemeinschaft" id="gemeinschaft"> <label for="Gemeinschaft">Gemeinschaft</label><br>
+			<input type="checkbox" name="werte" value="Genialität" id="genialität"> <label for="Genialität">Genialität</label><br>
+			<input type="checkbox" name="werte" value="Genuss" id="genuss"> <label for="Genuss">Genuss</label><br>
+			<input type="checkbox" name="werte" value="Gerechtigkeit" id="gerechtigkeit"> <label for="Gerechtigkeit">Gerechtigkeit</label><br>
+			<input type="checkbox" name="werte" value="Geselligkeit" id="geselligkeit"> <label for="Geselligkeit">Geselligkeit</label><br>
+			<input type="checkbox" name="werte" value="Gesundheit" id="gesundheit"> <label for="Gesundheit">Gesundheit</label><br>
+			<input type="checkbox" name="werte" value="Gewissen" id="gewissen"> <label for="Gewissen">Gewissen</label><br>
+			<input type="checkbox" name="werte" value="Harmonie" id="harmonie"> <label for="Harmonie">Harmonie</label><br>
+			<input type="checkbox" name="werte" value="Herausforderung" id="herausforderung"> <label for="Herausforderung">Herausforderung</label><br>
+			<input type="checkbox" name="werte" value="Hilfsbereitschaft" id="hilfsbereitschaft"> <label for="Hilfsbereitschaft">Hilfsbereitschaft</label><br>
+			<input type="checkbox" name="werte" value="Hingabe" id="hingabe"> <label for="Hingabe">Hingabe</label><br>
+			<input type="checkbox" name="werte" value="Individualität" id="individualität"> <label for="Individualität">Individualität</label><br>
+			<input type="checkbox" name="werte" value="Integrität" id="integrität"> <label for="Integrität">Integrität</label><br>
+			<input type="checkbox" name="werte" value="Intuition" id="intuition"> <label for="Intuition">Intuition</label><br>
+			<input type="checkbox" name="werte" value="Karriere" id="karriere"> <label for="Karriere">Karriere</label><br>
+			</div>
+			</td>
+			<td>
+			<div>
+			<input type="checkbox" name="werte" value="Kinder" id="kinder"> <label for="Kinder">Kinder</label><br>
+			<input type="checkbox" name="werte" value="Kompetenz" id="kompetenz"> <label for="Kompetenz">Kompetenz</label><br>
+			<input type="checkbox" name="werte" value="Kontaktfähigkeit" id="kontaktfähigkeit"> <label for="Kontaktfähigkeit">Kontaktfähigkeit</label><br>
+			<input type="checkbox" name="werte" value="Kreativität" id="kreativität"> <label for="Kreativität">Kreativität</label><br>
+			<input type="checkbox" name="werte" value="Kultur" id="kultur"> <label for="Kultur">Kultur</label><br>
+			<input type="checkbox" name="werte" value="Kunst" id="kunst"> <label for="Kunst">Kunst</label><br>
+			<input type="checkbox" name="werte" value="Lebensfreude" id="lebensfreude"> <label for="Lebensfreude">Lebensfreude</label><br>
+			<input type="checkbox" name="werte" value="Leistung" id="leistung"> <label for="Leistung">Leistung</label><br>
+			<input type="checkbox" name="werte" value="Liebe" id="liebe"> <label for="Liebe">Liebe</label><br>
+			<input type="checkbox" name="werte" value="Loyalität" id="loyalität"> <label for="Loyalität">Loyalität</label><br>
+			<input type="checkbox" name="werte" value="Macht" id="macht"> <label for="Macht">Macht</label><br>
+			<input type="checkbox" name="werte" value="Mut" id="mut"> <label for="Mut">Mut</label><br>
+			<input type="checkbox" name="werte" value="Optimismus" id="optimismus"> <label for="Optimismus">Optimismus</label><br>
+			<input type="checkbox" name="werte" value="Ordnung" id="ordnung"> <label for="Ordnung">Ordnung</label><br>
+			<input type="checkbox" name="werte" value="Persönlichkeit" id="persönlichkeit"> <label for="Persönlichkeit">Persönlichkeit</label><br>
+			<input type="checkbox" name="werte" value="Philosophie" id="philosophie"> <label for="Philosophie">Philosophie</label><br>
+			<input type="checkbox" name="werte" value="Pünktlichkeit" id="pünktlichkeit"> <label for="Pünktlichkeit">Pünktlichkeit</label><br>
+			<input type="checkbox" name="werte" value="Reichtum" id="reichtum"> <label for="Reichtum">Reichtum</label><br>
+			<input type="checkbox" name="werte" value="Reisen" id="reisen"> <label for="Reisen">Reisen</label><br>
+			<input type="checkbox" name="werte" value="Religion" id="religion"> <label for="Religion">Religion</label><br>
+			<input type="checkbox" name="werte" value="Respekt" id="respekt"> <label for="Respekt">Respekt</label><br>
+			<input type="checkbox" name="werte" value="Ruhe" id="ruhe"> <label for="Ruhe">Ruhe</label><br>
+			<input type="checkbox" name="werte" value="Ruhm" id="ruhm"> <label for="Ruhm">Ruhm</label><br>
+			<input type="checkbox" name="werte" value="Sammeln" id="sammeln"> <label for="Sammeln">Sammeln</label><br>
+			<input type="checkbox" name="werte" value="Schönheit" id="schönheit"> <label for="Schönheit">Schönheit</label><br>
+			</div>
+			</td>
+			<td>
+			<div>
+			<input type="checkbox" name="werte" value="Selbstachtung" id="selbstachtung"> <label for="Selbstachtung">Selbstachtung</label><br>
+			<input type="checkbox" name="werte" value="Selbstbewusstsein" id="selbstbewusstsein"> <label for="Selbstbewusstsein">Selbstbewusstsein</label><br>
+			<input type="checkbox" name="werte" value="Sexualität" id="sexualität"> <label for="Sexualität">Sexualität</label><br>
+			<input type="checkbox" name="werte" value="Sicherheit" id="sicherheit"> <label for="Sicherheit">Sicherheit</label><br>
+			<input type="checkbox" name="werte" value="Sinn" id="sinn"> <label for="Sinn">Sinn</label><br>
+			<input type="checkbox" name="werte" value="Sparsamkeit" id="sparsamkeit"> <label for="Sparsamkeit">Sparsamkeit</label><br>
+			<input type="checkbox" name="werte" value="Spaß" id="spaß"> <label for="Spaß">Spaß</label><br>
+			<input type="checkbox" name="werte" value="Spiritualität" id="spiritualität"> <label for="Spiritualität">Spiritualität</label><br>
+			<input type="checkbox" name="werte" value="Stärke" id="stärke"> <label for="Stärke">Stärke</label><br>
+			<input type="checkbox" name="werte" value="Status" id="status"> <label for="Status">Status</label><br>
+			<input type="checkbox" name="werte" value="Unabhängigkeit" id="unabhängigkeit"> <label for="Unabhängigkeit">Unabhängigkeit</label><br>
+			<input type="checkbox" name="werte" value="Verantwortung" id="verantwortung"> <label for="Verantwortung">Verantwortung</label><br>
+			<input type="checkbox" name="werte" value="Verständnis" id="verständnis"> <label for="Verständnis">Verständnis</label><br>
+			<input type="checkbox" name="werte" value="Vertrauen" id="vertrauen"> <label for="Vertrauen">Vertrauen</label><br>
+			<input type="checkbox" name="werte" value="Vitalität" id="vitalität"> <label for="Vitalität">Vitalität</label><br>
+			<input type="checkbox" name="werte" value="Wahrheit" id="wahrheit"> <label for="Wahrheit">Wahrheit</label><br>
+			<input type="checkbox" name="werte" value="Weisheit" id="weisheit"> <label for="Weisheit">Weisheit</label><br>
+			<input type="checkbox" name="werte" value="Wettbewerb" id="wettbewerb"> <label for="Wettbewerb">Wettbewerb</label><br>
+			<input type="checkbox" name="werte" value="Willenskraft" id="willenskraft"> <label for="Willenskraft">Willenskraft</label><br>
+			<input type="checkbox" name="werte" value="Wissen" id="wissen"> <label for="Wissen">Wissen</label><br>
+			<input type="checkbox" name="werte" value="Wohlstand" id="wohlstand"> <label for="Wohlstand">Wohlstand</label><br>
+			<input type="checkbox" name="werte" value="Würdigung" id="würdigung"> <label for="Würdigung">Würdigung</label><br>
+			<input type="checkbox" name="werte" value="Zärtlichkeit" id="zärtlichkeit"> <label for="Zärtlichkeit">Zärtlichkeit</label><br>
+			<input type="checkbox" name="werte" value="Zielstrebigkeit" id="zielstrebigkeit"> <label for="Zielstrebigkeit">Zielstrebigkeit</label><br>
+			<input type="checkbox" name="werte" value="Zuverlässigkeit" id="zuverlässigkeit"> <label for="Zuverlässigkeit">Zuverlässigkeit</label><br>
+			<input type="checkbox" name="werte" value="Etwas Gutes und Sinnvolles der Nachwelt hinterlassen" id="etwas gutes und sinnvolles der nachwelt hinterlassen"> <label for="Etwas Gutes und Sinnvolles der Nachwelt hinterlassen">Etwas Gutes und Sinnvolles der Nachwelt hinterlassen</label><br>
+			</td>
+			</div>
+		</div>
+	</td>
+    </div>
+	</tr>
+  </body>
+  
+</html>
