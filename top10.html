@@ -9,26 +9,34 @@ SPDX-License-Identifier: Apache-2.0 -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script src="top10.js" ></script>
-		</head>  
-	<img src="Logo.png" alt="Mint Coaching"> 
- <h1>Werteanalyse</h1>
+		<script type="module" src="jspdf.min.js"></script> <!-- 2. PDF Variante -->
+		<button class="button" onclick="pdfdruck()">PDF2erzeugen</button></br>
+		<script src="html2pdf.bundle.min.js"></script>
+		</head> 
+<h1>
+		<img src="Logo.png" alt="Mint Coaching"> 
+ Werteanalyse</h1>
  <div> <button class="button" onclick="goBack()">Zurück</button></div></br>
 		<script>
 			function goBack() {
 			window.history.back();
 			}
 		</script>
+		
   <body>
-  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-  <colgroup>
-    <col width="20%">
-    <col width="20%">
-	<col width="20%">
-	<col width="20%">
-	<col width="20%">
-  </colgroup>
-  <tr>
+  <table  id="druck"cellspacing="0" cellpadding="0" border="0" align="center">
+	<tr>
+	<th>
+	<td>
+	</td>
+	</th>
+	</tr>
+	<tr>
+	<th>Meine Top 10 Werte</th>
+	</tr>
+	<tr>
   <td>
     <div class="container">
         <div draggable="true" class="box" id="1">1</div>
@@ -45,5 +53,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 	</div>
   </td>
  </tr>
+ </table>
  </body>
+ <button class="button" onclick="generatePDF()">PDF erzeugen</button></br>
 </html>
