@@ -29,7 +29,7 @@ function checkbox()
   }
   if(next == 0) {
 	  
-	  window.open('topn/topn.html', '_self');
+	  window.open('topn.html', '_self');
 	  
 	}
   
