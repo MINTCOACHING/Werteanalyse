@@ -49,3 +49,11 @@ body {
   user-select: none;
 }
 
+@page { margin: 0; }
+
+@media print{
+#printPageButton {
+    display: none;
+    }
+
+
