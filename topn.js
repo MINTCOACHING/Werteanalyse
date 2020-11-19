@@ -29,7 +29,7 @@ function myvalues()
 		myC.type = 'checkbox' ;
 		myC.checked = false ;
 		myC.id = 'CB'+i ;
-		myC.value = mywert;
+		myC.value = mywert; 
 		myF.appendChild( myC ) ;
 		myL = document.createTextNode(mywert);
 		myF.appendChild( myL ) ;
