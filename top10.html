@@ -13,10 +13,12 @@ SPDX-License-Identifier: Apache-2.0 -->
 		<script src="html2pdf.bundle.min.js"></script>
 		<script src="top10.js" ></script>
 		</head> 
-<h1>
-		<img src="Logo.png" alt="Mint Coaching"> 
- Werteanalyse</h1>
- <div> <button id="printPageButton" class="button" onclick="goBack()">Zurück</button></div></br>
+<h1 align="center">
+		<img src="Logo.png" alt="Mint Coaching"> <div><br>
+      Werteanalyse </div>
+	  <div> <button id="printPageButton" class="button" onclick="goBack()">Zurück</button> 
+	  <button id="printPageButton" class="button" onclick="javascript:window.print()">PDF erzeugen</button></div></h1>
+ 
 		<script>
 			function goBack() {
 			window.history.back();
@@ -26,16 +28,10 @@ SPDX-License-Identifier: Apache-2.0 -->
   <body>
   <table  id="druck"cellspacing="0" cellpadding="0" border="0" align="center">
 	<tr>
-	<th>
-	<td>
-	</td>
-	</th>
+	<th height=50 valign="center"> Meine Top 10 Werte</th>
 	</tr>
 	<tr>
-	<th>Meine Top 10 Werte</th>
-	</tr>
-	<tr>
-  <td>
+	  <td>
     <div class="container">
         <div draggable="true" class="box" id="1">1</div>
         <div draggable="true" class="box" id="2">2</div>
@@ -50,8 +46,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 		
 	</div>
   </td>
- </tr>
+  </tr>
  </table>
  </body>
- <button id="printPageButton" class="button" onclick="javascript:window.print()">PDF erzeugen</button></br>
+ 
 </html>

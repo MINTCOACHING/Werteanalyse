@@ -28,6 +28,7 @@ function myvalues()
 		myF.appendChild(br);
 		myC.type = 'checkbox' ;
 		myC.checked = false ;
+		myC.align = 'center';
 		myC.id = 'CB'+i ;
 		myC.value = mywert; 
 		myF.appendChild( myC ) ;
