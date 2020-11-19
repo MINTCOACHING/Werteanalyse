@@ -1,4 +1,4 @@
-
+import { jsPDF } from 'jspdf.min.js';
 
 window.onload = clean;
 
@@ -84,3 +84,29 @@ function clean(){
 	}
 }
 
+function generatePDF() {
+        // Choose the element that our invoice is rendered in.
+        const element = document.getElementById("druck");
+		var opt = {
+		  margin:       1,
+		  filename:     'MINT-Coaching_Werteanalyse.pdf',
+		  image:        { type: 'jpeg', quality: 0.98 },
+		  html2canvas:  { scale: 4,},
+		  jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+};
+
+		// New Promise-based usage:
+		html2pdf().set(opt).from(element).save();
+
+        
+      }
+	  
+	  
+
+function pdfdruck(){	  
+	var doc = new jsPDF()
+	doc.text(20, 20, 'Hello world!')
+	doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.')
+	doc.addPage()
+	doc.text(20, 20, 'Do you like that?')
+}
