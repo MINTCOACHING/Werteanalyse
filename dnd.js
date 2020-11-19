@@ -22,8 +22,8 @@ function checkbox()
 	
 		if(checks[i].checked == true ) {
 			zaehler += 1;
-			document.getElementById("demo").innerHTML =
-			"Anzahl ausgewählter Werte: " + zaehler;
+			//document.getElementById("demo").innerHTML =
+			//"Anzahl ausgewählter Werte: " + zaehler;
 			str = '';
 			str= checks[i].value;
 			localStorage.setItem("werte" + zaehler, str);
