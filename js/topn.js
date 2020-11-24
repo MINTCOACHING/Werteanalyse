@@ -23,18 +23,28 @@ function myvalues()
 	if(mywert!==null) {
 		counter  += 1;
 		myF = document.createDocumentFragment() ;
+		var myDiv=document.createElement("DIV");
+		myDiv.className="werteelement";
+
 		myC = document.createElement( 'INPUT' ) ;
-		var br = document.createElement('br');
-		myF.appendChild(br);
 		myC.type = 'checkbox' ;
+		myC.className="wertebox";
 		myC.checked = false ;
-		myC.align = 'center';
 		myC.id = 'CB'+i ;
 		myC.value = mywert; 
-		myF.appendChild( myC ) ;
-		myL = document.createTextNode(mywert);
-		myF.appendChild( myL ) ;
-		document.body.appendChild( myF );
+
+		myDiv.appendChild( myC ) ;
+		
+		myL = document.createElement("label");
+		myL.className="wertelabel";
+		myL.htmlFor=myC.id;
+		myT=document.createTextNode(mywert);
+		myL.appendChild(myT);
+		myDiv.appendChild( myL ) ;
+
+		myF.appendChild( myDiv ) ;
+		var div=document.getElementById("canvas");
+		div.appendChild( myF );
 		}
   }
   }
