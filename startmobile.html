@@ -1,0 +1,131 @@
+<!-- Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MINT Coaching - Meine Werte</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/dnd.js"></script>
+  </head>  
+	
+   <body>
+	<h1 align="center">
+		<img src="images/Logo.png" alt="Mint Coaching">Mobile
+	  <div><button class="button" onclick="checkbox()">Weiter ...</button>
+	  </div>
+  	</h1>
+	   <table border="0" width=100% >
+		   <td valign=top>
+  		<div id="canvas" class="containerallmobile">
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Abenteuer" id=1><label class="wertelabel" for="1">Abenteuer</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Abwechslung" id=2> <label class="wertelabel"for="2">Abwechslung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Aktivität" id=3> <label class="wertelabel"for="3">Aktivität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Altersversorgung" id=4> <label class="wertelabel"for="4">Altersversorgung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ausgeglichenheit" id=5> <label class="wertelabel"for="5">Ausgeglichenheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ausgleich" id=6> <label class="wertelabel"for="6">Ausgleich</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ausstrahlung" id=7> <label class="wertelabel"for="7">Ausstrahlung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Autorität" id=8> <label class="wertelabel"for="8">Autorität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Begeisterung" id=9> <label class="wertelabel"for="9">Begeisterung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Besitz" id=10> <label class="wertelabel"for="10">Besitz</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Bildung" id=11> <label class="wertelabel"for="11">Bildung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Dankbarkeit" id=12> <label class="wertelabel"for="12">Dankbarkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Denken" id=13> <label class="wertelabel"for="13">Denken</label></div>
+		  	<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Disziplin" id=14> <label class="wertelabel"for="14">Disziplin</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ehrlichkeit" id=15> <label class="wertelabel"for="15">Ehrlichkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Einfluss" id=16> <label class="wertelabel"for="16">Einfluss</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Energie" id=17> <label class="wertelabel"for="17">Energie</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Entwicklung" id=18> <label class="wertelabel"for="18">Entwicklung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Erholung" id=19> <label class="wertelabel"for="19">Erholung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ernährung" id=20> <label class="wertelabel"for="20">Ernährung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ethik" id=21> <label class="wertelabel"for="21">Ethik</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Familiensinn" id=22> <label class="wertelabel"for="22">Familiensinn</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Finanz. Gewinn" id=23> <label class="wertelabel"for="23">Finanz. Gewinn</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Fitness" id=24> <label class="wertelabel"for="24">Fitness</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Fleiß" id=25> <label class="wertelabel"for="25">Fleiß</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Freizeit" id=26> <label class="wertelabel"for="26">Freizeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Freundlichkeit" id=27> <label class="wertelabel"for="27">Freundlichkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Freundschaft" id=28> <label class="wertelabel"for="28">Freundschaft</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Frieden" id=29> <label class="wertelabel"for="29">Frieden</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Führung" id=30> <label class="wertelabel"for="30">Führung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Fürsorge" id=31> <label class="wertelabel"for="31">Fürsorge</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Geborgenheit" id=32> <label class="wertelabel"for="32">Geborgenheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Geist" id=33> <label class="wertelabel"for="33">Geist</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Gelassenheit" id=34> <label class="wertelabel"for="34">Gelassenheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Geld" id=35> <label class="wertelabel"for="35">Geld</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Gemeinschaft" id=36> <label class="wertelabel"for="36">Gemeinschaft</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Genialität" id=37> <label class="wertelabel"for="37">Genialität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Genuss" id=38> <label class="wertelabel"for="38">Genuss</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Gerechtigkeit" id=39> <label class="wertelabel"for="39">Gerechtigkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Geselligkeit" id=40> <label class="wertelabel"for="40">Geselligkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Gesundheit" id=41> <label class="wertelabel"for="41">Gesundheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Gewissen" id=42> <label class="wertelabel"for="42">Gewissen</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Harmonie" id=43> <label class="wertelabel"for="43">Harmonie</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Herausforderung" id=44> <label class="wertelabel"for="44">Herausforderung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Hilfsbereitschaft" id=45> <label class="wertelabel"for="45">Hilfsbereitschaft</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Hingabe" id=46> <label class="wertelabel"for="46">Hingabe</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Individualität" id=47> <label class="wertelabel"for="47">Individualität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Integrität" id=48> <label class="wertelabel"for="48">Integrität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Intuition" id=49> <label class="wertelabel"for="49">Intuition</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Karriere" id=50> <label class="wertelabel"for="50">Karriere</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kinder" id=51> <label class="wertelabel"for="51">Kinder</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kompetenz" id=52> <label class="wertelabel"for="52">Kompetenz</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kontaktfähigkeit" id=53> <label class="wertelabel"for="53">Kontaktfähigkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kreativität" id=54> <label class="wertelabel"for="54">Kreativität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kultur" id=55> <label class="wertelabel"for="55">Kultur</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Kunst" id=56> <label class="wertelabel"for="56">Kunst</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Lebensfreude" id=57> <label class="wertelabel"for="57">Lebensfreude</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Leistung" id=58> <label class="wertelabel"for="58">Leistung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Liebe" id=59> <label class="wertelabel"for="59">Liebe</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Loyalität" id=60> <label class="wertelabel"for="60">Loyalität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Macht" id=61> <label class="wertelabel"for="61">Macht</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Mut" id=62> <label class="wertelabel"for="62">Mut</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Optimismus" id=63> <label class="wertelabel"for="63">Optimismus</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ordnung" id=64> <label class="wertelabel"for="64">Ordnung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Persönlichkeit" id=65> <label class="wertelabel"for="65">Persönlichkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Philosophie" id=66> <label class="wertelabel"for="66">Philosophie</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Pünktlichkeit" id=67> <label class="wertelabel"for="67">Pünktlichkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Reichtum" id=68> <label class="wertelabel"for="68">Reichtum</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Reisen" id=69> <label class="wertelabel"for="69">Reisen</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Religion" id=70> <label class="wertelabel"for="70">Religion</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Respekt" id=71> <label class="wertelabel"for="71">Respekt</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ruhe" id=72> <label class="wertelabel"for="72">Ruhe</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Ruhm" id=73> <label class="wertelabel"for="73">Ruhm</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Sammeln" id=74> <label class="wertelabel"for="74">Sammeln</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Schönheit" id=75> <label class="wertelabel"for="75">Schönheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Selbstachtung" id=76> <label class="wertelabel"for="76">Selbstachtung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Selbstbewusstsein" id=77> <label class="wertelabel"for="77">Selbstbewusstsein</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Sexualität" id=78> <label class="wertelabel"for="78">Sexualität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Sicherheit" id=79> <label class="wertelabel"for="79">Sicherheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Sinn" id=80> <label class="wertelabel"for="80">Sinn</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Sparsamkeit" id=81> <label class="wertelabel"for="81">Sparsamkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Spaß" id=82> <label class="wertelabel"for="82">Spaß</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Spiritualität" id=83> <label class="wertelabel"for="83">Spiritualität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Stärke" id=84> <label class="wertelabel"for="84">Stärke</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Status" id=85> <label class="wertelabel"for="85">Status</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Unabhängigkeit" id=86> <label class="wertelabel"for="86">Unabhängigkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Verantwortung" id=87> <label class="wertelabel"for="87">Verantwortung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Verständnis" id=88> <label class="wertelabel"for="88">Verständnis</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Vertrauen" id=89> <label class="wertelabel"for="89">Vertrauen</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Vitalität" id=90> <label class="wertelabel"for="90">Vitalität</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Wahrheit" id=91> <label class="wertelabel"for="91">Wahrheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Weisheit" id=92> <label class="wertelabel"for="92">Weisheit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Wettbewerb" id=93> <label class="wertelabel"for="93">Wettbewerb</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Willenskraft" id=94> <label class="wertelabel"for="94">Willenskraft</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Wissen" id=95> <label class="wertelabel"for="95">Wissen</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Wohlstand" id=96> <label class="wertelabel"for="96">Wohlstand</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Würdigung" id=97> <label class="wertelabel"for="97">Würdigung</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Zärtlichkeit" id=98> <label class="wertelabel"for="98">Zärtlichkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Zielstrebigkeit" id=99> <label class="wertelabel"for="99">Zielstrebigkeit</label></div>
+			<div class="containerelement"><input class="wertebox" type=checkbox name="werte" value="Zuverlässigkeit" id=100> <label class="wertelabel"for="100">Zuverlässigkeit</label></div>
+			<div class="containerelementlangtext"><input class="wertebox" type=checkbox name="werte" value="Etwas Gutes und Sinnvolles der Nachwelt hinterlassen" id=101> <label class="wertelabellangtext" for="101">Etwas Gutes und Sinnvolles der Nachwelt hinterlassen</label></div>  
+		</div>
+	</td>
+	</table>
+	
+	</body>
+  
+</html>
