@@ -55,12 +55,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   let items = document.querySelectorAll('.container .box');
   items.forEach(function(item) {
-    item.addEventListener('touchstart', handleDragStart, false);
-    item.addEventListener('touchstart', handleDragEnter, false);
-    item.addEventListener('touchmove', handleDragOver, false);
-    item.addEventListener('touchmove', handleDragLeave, false);
-    item.addEventListener('touchmove', handleDrop, false);
-    item.addEventListener('touchend', handleDragEnd, false);
+    
     item.addEventListener('dragstart', handleDragStart, false);
     item.addEventListener('dragenter', handleDragEnter, false);
     item.addEventListener('dragover', handleDragOver, false);

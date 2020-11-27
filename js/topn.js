@@ -68,5 +68,11 @@ function checkbox()
 			localStorage.setItem("wertetopten" + zaehler, checks);
 		}
 	}
-window.open('top10.html', '_self');
+	if(zaehler>2){
+		alert("Bitte nur 10 Werte auswählen!")
+	}else {
+			window.open('top10.html', '_self');
+		
+	}
+
 }
