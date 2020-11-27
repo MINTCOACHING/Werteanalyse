@@ -9,7 +9,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label::before {
-  width: 18px;
+  min-width: 18px;
   height: 18px;
   border-radius: 5px;
   border: 2px solid #143C5A;
@@ -19,6 +19,7 @@ input[type="checkbox"] + label::before {
   float: left;
   margin-right: 5px;
   margin-left: 5px;
+  color: #fff;
 }
 input[type="checkbox"]:checked+label::before {
   box-shadow: inset 0px 0px 0px 3px #fff;
@@ -30,7 +31,7 @@ input[type="checkbox"]:checked+label::before {
 input[type="checkbox"]:checked + label {
   background:#3296FF;
   color: white;
-  height: 30px;
+  height: 100%;
   width: 100%;
   border-radius: 5px;
 }
@@ -65,8 +66,8 @@ display:flex;
 .containerallmobile {
   display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: top;
     width: 100%;
     margin-top: 0px;
   
@@ -78,14 +79,13 @@ display:flex;
   justify-content: flex-start;
   width:210px;
   margin-bottom: 20px;
-  align-items: center;
-  font: 14pt/1.1 arial;
+  align-items: left;
 }
 
 .containerelementlangtext{
   display:flex;
   justify-content: flex-start;
-  width:520px;
+  width: 520px;
   margin-bottom: 20px;
   align-items: center;
 }
@@ -127,12 +127,12 @@ display:flex;
   margin-bottom: 0px;
   align-items: center;
   font: 14pt/1.1 arial;
-}
+  }
 
 .wertebox {
   display:flex;
   justify-content: flex-start;
-  transform: scale(1.5);
+  /*transform: scale(1.5);*/
   align-items: center;
 }
 .lab {
@@ -172,10 +172,27 @@ display:flex;
   display: inline-block;
   font-size: 16px;
   border-radius:15px;
-  width: 150px;
+  width: 100px;
 }
 
 .button:hover{
+	background-color:#2864A0 /*#8BA7C1;*/
+}
+
+.buttonmobile {
+  background-color: #143C5A; /* Green #4CAF50 143c5aff*/
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:15px;
+  width: 50px;
+}
+
+.buttonmobile:hover{
 	background-color:#2864A0 /*#8BA7C1;*/
 }
 
@@ -193,10 +210,4 @@ display:flex;
 .texteinrueckung {
       text-indent: 2em;
       margin: 0;
-   }
-
-.label { background-color:#333; color:#FFF; }
-
-.input[type="checkbox"]:checked + label {
-       background: brown;
-   }
+}
