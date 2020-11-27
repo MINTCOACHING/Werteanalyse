@@ -20,8 +20,10 @@ display:flex;
 .containerelement {
   display:flex;
   justify-content: flex-start;
-  width: 150px;
+  width:200px;
   margin-bottom: 10px;
+  align-items: center;
+  font: 16pt/1.1 arial;
 }
 
 
@@ -39,15 +41,25 @@ display:flex;
   justify-content: flex-start;
   width: 100px;
   margin-bottom: 2px;
+  align-items: center;
 }
 
 .wertelabel {
+  display:flex;
+  justify-content: flex-start;
   text-align: left;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  align-items: center;
+  font: 16pt/1.1 arial;
 }
 
 .wertebox {
   display:flex;
   justify-content: flex-start;
+  transform: scale(1.5);
+  align-items: center;
+  
 }
 .lab {
   color:#0091D2;
