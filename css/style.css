@@ -3,6 +3,13 @@ SPDX-License-Identifier: Apache-2.0 */
 
 /* CSS files add styling rules to your content */
 
+@supports (touch-action:manipulation) {
+  .manipulation {
+      touch-action: manipulation;
+  }
+  .manipulation ~ h4::after {display: none;}
+}
+
 /* Standardcheckbox ausschalten */
 input[type="checkbox"] {
   display:none;
