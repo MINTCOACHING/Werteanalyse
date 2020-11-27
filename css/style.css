@@ -17,6 +17,14 @@ display:flex;
 
 }
 
+.containerelement {
+  display:flex;
+  justify-content: flex-start;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+
 .werteliste {
   display:flex;
   flex-direction: column;
@@ -89,4 +97,7 @@ display:flex;
     display: none;
     }
 
-
+.texteinrueckung {
+      text-indent: 2em;
+      margin: 0;
+   }
