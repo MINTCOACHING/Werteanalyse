@@ -7,7 +7,7 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
 }
-.containerAll {
+.containerall {
 display:flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,6 @@ display:flex;
   margin-top: 10px;
 
 }
-
 
 .werteliste {
   display:flex;
@@ -29,7 +28,7 @@ display:flex;
 .werteelement {
   display:flex;
   justify-content: flex-start;
-  width: 200px;
+  width: 100px;
   margin-bottom: 2px;
 }
 
@@ -38,7 +37,8 @@ display:flex;
 }
 
 .wertebox {
-
+  display:flex;
+  justify-content: flex-start;
 }
 .lab {
   color:#0091D2;
