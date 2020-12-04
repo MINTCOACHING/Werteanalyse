@@ -16,6 +16,31 @@ SPDX-License-Identifier: Apache-2.0 */
   .manipulation ~ h4::after {display: none;}
 }
 
+.printpdf {
+  max-width: 500px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        color: #555;
+}
+
+.footer1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.footer2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
 /* Standardcheckbox ausschalten */
 input[type="checkbox"] {
   display:none;
@@ -168,6 +193,7 @@ display:flex;
   padding: 10px;
   cursor: move;
   text-align: center;
+  font-size: 18px;
   color: #fff;
   }
 
@@ -175,17 +201,26 @@ display:flex;
   border: 5px dotted #666;
 }
 
+.boxfooter {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+    }
+
 .button {
   background-color: #143C5A; /* Green #4CAF50 143c5aff*/
   border: none;
   color: white;
-  padding: 15px 20px;
+  padding: 10px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius:15px;
   width: 100px;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .button:hover{
