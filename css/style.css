@@ -1,6 +1,12 @@
 /* Copyright 2018 Google LLC.
 SPDX-License-Identifier: Apache-2.0 */
 
+/* Damit auch alles (auch background) gedruckt wird */
+{
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+  color-adjust: exact !important;                 /*Firefox*/
+}
+
 /* CSS files add styling rules to your content */
 
 @supports (touch-action:manipulation) {
@@ -74,9 +80,9 @@ display:flex;
   display:flex;
     flex-direction: column;
     justify-content: top;
-    align-items: top;
+    align-items: center;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 100px;
   
   }
   

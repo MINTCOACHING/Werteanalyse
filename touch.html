@@ -8,9 +8,9 @@
 		<title>MINT Coaching Meine Werte</title>
 		<style>
 			body { min-height: 200v }
-			#outer div { display: flex; flex-direction: column;align-items: center; justify-content: center; border: 50px solid  black; width: 200px; height: 60px; }
-			.draggable {  display: flex; flex-direction: column; background-color:  #3296FF; border-radius: 15px;width: 300px; height: 60px; align-items: center; justify-content: center;}
-			.draggable p { border: 0px dashed white; padding: .5em; }
+			#outer div { display: flex; flex-direction: column;}
+			.draggable { display: flex; background-color:  #3296FF; border-radius: 15px;width: 300px; height: 60px; justify-content: center; align-items: center;}
+			.draggable p { border: 1px dashed black; padding: .5em; }
 			.draggable button, .fixed button { position: absolute; padding: .5em; right: 0; top: 0; }
 			.fixed { position: relative; }
 			button { padding: .5em; }
@@ -221,17 +221,17 @@
                 }
             </script>
 		
-		<div>
-            <div class="draggable" id="outer">1</div>
-            <div class="draggable" id="outer">2</div>
-            <div class="draggable" id="outer">3</div>
-            <div class="draggable" id="outer">4</div>
-            <div class="draggable" id="outer">5</div>
-            <div class="draggable" id="outer">6</div>
-            <div class="draggable" id="outer">7</div>
-            <div class="draggable" id="outer">8</div>
-            <div class="draggable" id="outer">9</div>
-            <div class="draggable" id="outer">10</div>
+		<div class="outer">
+			<div class="draggable" id="w1">1</div>
+			<div class="draggable" id="w2">2</div>
+            <div class="draggable" id="w3">3</div>
+            <div class="draggable" id="w4">4</div>
+            <div class="draggable" id="w5">5</div>
+            <div class="draggable" id="w6">6</div>
+            <div class="draggable" id="w7">7</div>
+            <div class="draggable" id="w8">8</div>
+            <div class="draggable" id="w9">9</div>
+            <div class="draggable" id="w10">10</div>
         </div>
         
     </body>
