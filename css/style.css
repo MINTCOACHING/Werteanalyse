@@ -17,8 +17,17 @@ SPDX-License-Identifier: Apache-2.0 */
 }
 
 .hilfetext{
-  font-size:12pt;
+  font-size:10pt;
   color:grey;
+  align-content: center;
+
+}
+
+.hilfetextmobile{
+  font-size:8pt;
+  color:grey;
+  align-content: center;
+  vertical-align: middle;
 
 }
 
