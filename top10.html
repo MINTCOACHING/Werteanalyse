@@ -14,23 +14,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 		<script src="js/html2canvas.js"></script>
 		<script src="js/jspdf.min.js"></script>
 		<script src="js/top10.js" ></script>
-		<script>
-			var mobile;
-			function isMobile(){
-				return navigator.userAgent.match(/(iPhone|iPod|iPad|blackberry|android|Kindle|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
-			}
-			if(isMobile()){
-				/*alert("Es handelt sich um ein mobiles Gerät");*/
-				mobile=1;
-				document.getElementById('hilfetext').style.visibility = 'hidden';
-				//alert(mobile);
 		
-			}else {
-				/*alert("Es handelt sich um kein mobiles Gerät");*/
-				mobile=2;
-				document.getElementById('hilfetext').style.visibility = 'visible';
-			}
-			</script>
 		
 		</head> 
 
@@ -44,41 +28,12 @@ SPDX-License-Identifier: Apache-2.0 -->
 		<div> 
 			<button id="printPageButton" class="button" onclick="goBack()">Zurück</button> 
 			<button id="printPageButton2" class="button" onclick="generatePDF()">PDF</button>
-			<script>
-				function generatePDF() {
-					document.getElementById('printPageButton').style.visibility = 'hidden';
-					document.getElementById('printPageButton2').style.visibility = 'hidden';
-					document.getElementById('hilfetext').style.visibility = 'hidden';
-					document.getElementById('containerid').style.marginTop="-80px"
-					//alert(mobile);
-					
-					
-				  // Choose the element that our invoice is rendered in.
-				  var element = document.getElementById('druckbereich');
-				  
-
-				  var opt = {
-						margin:       0.5,
-						filename:     'MINTCoaching_MeineWerte.pdf',
-						image:        { type: 'jpeg', quality: 0.98 },
-						html2canvas:  { scale: 3 },
-						jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-						};
-						html2pdf().set(opt).from(element).save();
-						
-					}
-				function refreshpage(){
-					document.getElementById('printPageButton').style.visibility = 'visible';
-					document.getElementById('printPageButton2').style.visibility = 'visible';
-					document.getElementById('hilfetext').style.visibility = 'visible';
-					document.getElementById('containerid').style.marginTop="0px"
-				}	
-					
-			</script>
+			
 			
 
 	  </div>
 	  <div id="hilfetext" class="hilfetext">Sortiere deine 10 Werte und verschiebe die Boxen!</div>
+	  
  
 		<script>
 			function goBack() {
@@ -88,12 +43,44 @@ SPDX-License-Identifier: Apache-2.0 -->
 	</h1> 
 <div id="druckbereich" >
 	<table cellspacing="0" cellpadding="0" border="0" align="center">
-	<!--<tr>
-	<th height=50 valign="center"> Meine Top 10 Werte</th>
-	</tr>-->
 	<tr >
 		<td >
     <div id="containerid" class="container" >
+		<script>
+			
+			function isMobile(){
+				return navigator.userAgent.match(/(iPhone|iPod|iPad|blackberry|android|Kindle|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
+			}
+				if(isMobile()){
+				/*alert("Es handelt sich um ein mobiles Gerät");*/
+				document.getElementById('hilfetext').style.visibility = 'hidden';
+				document.getElementById('containerid').style.marginTop="-50px";
+				
+			}	else {
+				//alert("Es handelt sich um kein mobiles Gerät");
+				document.getElementById('hilfetext').style.visibility = 'visible';
+				document.getElementById('containerid').style.marginTop="0px";
+			}
+			</script>
+		<script>
+		function refreshpage(){
+			if(isMobile()){
+			document.getElementById('printPageButton').style.visibility = 'visible';
+			document.getElementById('printPageButton2').style.visibility = 'visible';
+			document.getElementById('hilfetext').style.visibility = 'hidden';
+			document.getElementById('containerid').style.marginTop="-50px"
+			//location.reload();
+			}
+			else {
+			document.getElementById('printPageButton').style.visibility = 'visible';
+			document.getElementById('printPageButton2').style.visibility = 'visible';
+			document.getElementById('hilfetext').style.visibility = 'visible';
+			document.getElementById('containerid').style.marginTop="0px"
+			//location.reload();
+			}
+		
+		}	
+	</script>
         <div draggable="true" class="box" id="1">1</div>
         <div draggable="true" class="box" id="2">2</div>
         <div draggable="true" class="box" id="3">3</div>
@@ -111,6 +98,38 @@ SPDX-License-Identifier: Apache-2.0 -->
   </td>
   </tr>
    </table>
+   <script>
+	function generatePDF() {
+		document.getElementById('printPageButton').style.visibility = 'hidden';
+		document.getElementById('printPageButton2').style.visibility = 'hidden';
+		document.getElementById('hilfetext').style.visibility = 'hidden';
+		document.getElementById('containerid').style.marginTop="-80px"
+		//alert(mobile);
+		
+		
+	  // Choose the element that our invoice is rendered in.
+	  var element = document.getElementById('druckbereich');
+	  
+
+	  var opt = {
+			margin:       0.5,
+			filename:     'MINTCoaching_MeineWerte.pdf',
+			image:        { type: 'jpeg', quality: 0.98 },
+			html2canvas:  { scale: 3 },
+			jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+			};
+			html2pdf().set(opt).from(element).save();
+			
+		}
+	/*/function refreshpage(){
+		document.getElementById('printPageButton').style.visibility = 'visible';
+		document.getElementById('printPageButton2').style.visibility = 'visible';
+		document.getElementById('hilfetext').style.visibility = 'visible';
+		document.getElementById('containerid').style.marginTop="0px"
+		//location.reload();
+	}	*/
+		
+</script>
    	  
 </div>
  
