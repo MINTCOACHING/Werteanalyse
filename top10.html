@@ -14,6 +14,22 @@ SPDX-License-Identifier: Apache-2.0 -->
 		<script src="js/html2canvas.js"></script>
 		<script src="js/jspdf.min.js"></script>
 		<script src="js/top10.js" ></script>
+		<script>
+			var mobile;
+			function isMobile(){
+				return navigator.userAgent.match(/(iPhone|iPod|iPad|blackberry|android|Kindle|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
+			}
+			if(isMobile()){
+				/*alert("Es handelt sich um ein mobiles Gerät");*/
+				mobile=1;
+				document.getElementById('hilfetext').style.visibility = 'hidden';
+		
+			}else {
+				/*alert("Es handelt sich um kein mobiles Gerät");*/
+				mobile=2;
+				document.getElementById('hilfetext').style.visibility = 'visible';
+			}
+			</script>
 		
 		</head> 
 
@@ -33,6 +49,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 					document.getElementById('printPageButton2').style.visibility = 'hidden';
 					document.getElementById('hilfetext').style.visibility = 'hidden';
 					document.getElementById('containerid').style.marginTop="-80px"
+					//alert(mobile);
 					
 				  // Choose the element that our invoice is rendered in.
 				  var element = document.getElementById('druckbereich');
@@ -42,7 +59,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 						margin:       0.5,
 						filename:     'MINTCoaching_MeineWerte.pdf',
 						image:        { type: 'jpeg', quality: 0.98 },
-						html2canvas:  { scale: 2 },
+						html2canvas:  { scale: 3 },
 						jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
 						};
 						html2pdf().set(opt).from(element).save();
