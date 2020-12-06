@@ -104,7 +104,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 		document.getElementById('printPageButton2').style.visibility = 'hidden';
 		document.getElementById('hilfetext').style.visibility = 'hidden';
 		document.getElementById('containerid').style.marginTop="-80px"
-		//alert(mobile);
+		
+		
 		
 		
 	  // Choose the element that our invoice is rendered in.
@@ -119,6 +120,10 @@ SPDX-License-Identifier: Apache-2.0 -->
 			jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
 			};
 			html2pdf().set(opt).from(element).save();
+
+			if(isMobile()){
+		alert("PDF wurde erstellt");
+		}
 			
 		}
 	/*/function refreshpage(){
