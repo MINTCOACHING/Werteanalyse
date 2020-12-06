@@ -31,6 +31,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 				function generatePDF() {
 					document.getElementById('printPageButton').style.visibility = 'hidden';
 					document.getElementById('printPageButton2').style.visibility = 'hidden';
+					document.getElementById('hilfetext').style.visibility = 'hidden';
+					document.getElementById('containerid').style.marginTop="-80px"
 					
 				  // Choose the element that our invoice is rendered in.
 				  var element = document.getElementById('druckbereich');
@@ -49,12 +51,15 @@ SPDX-License-Identifier: Apache-2.0 -->
 				function refreshpage(){
 					document.getElementById('printPageButton').style.visibility = 'visible';
 					document.getElementById('printPageButton2').style.visibility = 'visible';
+					document.getElementById('hilfetext').style.visibility = 'visible';
+					document.getElementById('containerid').style.marginTop="0px"
 				}	
 					
 			</script>
 			
 
 	  </div>
+	  <div id="hilfetext" class="hilfetext">Sortiere deine 10 Werte und verschiebe die Boxen!</div>
  
 		<script>
 			function goBack() {
@@ -69,7 +74,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 	</tr>-->
 	<tr >
 		<td >
-    <div class="container" >
+    <div id="containerid" class="container" >
         <div draggable="true" class="box" id="1">1</div>
         <div draggable="true" class="box" id="2">2</div>
         <div draggable="true" class="box" id="3">3</div>

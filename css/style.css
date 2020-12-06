@@ -16,6 +16,12 @@ SPDX-License-Identifier: Apache-2.0 */
   .manipulation ~ h4::after {display: none;}
 }
 
+.hilfetext{
+  font-size:12pt;
+  color:grey;
+
+}
+
 .printpdf {
   max-width: 100%;
         margin: auto;
