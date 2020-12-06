@@ -140,7 +140,6 @@ display:flex;
 }
 
 
-
 .werteliste {
   display:flex;
   flex-direction: column;
@@ -192,8 +191,13 @@ display:flex;
   display: grid;
   /*grid-template-columns: repeat(1, 1fr);
   */
-  grid-template-columns: 300px;
+  grid-template-columns: 100%;
   gap: 5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
   
 }
 
@@ -206,6 +210,7 @@ display:flex;
   text-align: center;
   font-size: 18px;
   color: #fff;
+  width: 220px;
   }
 
 .box.over {
@@ -217,6 +222,7 @@ display:flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   
     }
 
